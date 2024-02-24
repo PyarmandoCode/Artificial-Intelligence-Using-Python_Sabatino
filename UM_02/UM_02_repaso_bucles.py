@@ -21,7 +21,7 @@ def calcular_notas():
         for nota in range(3):
             notas = float(input(f"Ingrese Nota {nota}:"))
             lista_notas.append(notas)
-            suma_notas=sum(lista_notas)
+        suma_notas=sum(lista_notas)
         promedio = suma_notas / 3
         mensaje = "Aprobo el curso" if promedio >=10.5 else "No Aprobo el curso"
         return mensaje
