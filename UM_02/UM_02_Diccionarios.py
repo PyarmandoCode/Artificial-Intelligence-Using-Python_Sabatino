@@ -53,7 +53,7 @@ def buscar_usuario_nombre(nom):
         else:
             print("Usuario no ubicado")
     except Exception as err:
-        print("Ocurrio un error consulte la web en 24 horas")        
+        print(f"Ocurrio un error consulte la web en 24 horas {err}")        
 
     
 
