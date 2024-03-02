@@ -34,10 +34,27 @@ Calcular los dias  que existen entre dos fechas
 fecha1=datetime(2022,5,10)
 fecha2=datetime(2022,3,15)
 diferencia_entre_fechas=fecha1-fecha2
-print(f"Diferencia entre dias {diferencia_entre_fechas.days}")
+#print(f"Diferencia entre dias {diferencia_entre_fechas.days}")
 diferencia_entre_años=diferencia_entre_fechas.days // 365
 diferencia_entre_meses=(diferencia_entre_fechas.days) % 365 //30
 
 
+fecha_actual=datetime.now()
+numero_mes=fecha_actual.month
 
+def nombre_mes(numero):
+    match numero:
+        case 1:
+            return "Enero"
+        case 2:
+            return "Febrero"
+        case 3:
+            return "Marzo"
+        case _:
+            return "Opcion invalida"
+        
+#print(nombre_mes(numero_mes))
 
+import calendar
+nombre_mes = calendar.month_name[numero_mes]    
+print(f"El Nombre del mes es {nombre_mes}")
