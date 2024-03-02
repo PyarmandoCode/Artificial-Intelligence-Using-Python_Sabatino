@@ -65,9 +65,13 @@ secuencia_aleatoria=[random.uniform(1,100) for _ in range(5)]
 random.seed(42)
 numero_aleatorio_1=random.random()
 numero_aleatorio_2=random.randint(1,100)
-print(numero_aleatorio_1)
-print(numero_aleatorio_2)
+#print(numero_aleatorio_1)
+#print(numero_aleatorio_2)
 
+import sys
+#print(f"La Version de python utilizada en este curso {sys.version}")
+#print(f"Obtener el Path de los modulos {sys.path}")
+sys.exit("Mensaje de error y codigo de salida")
 
 
 
